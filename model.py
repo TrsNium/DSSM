@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 
 class DSSM():
-    def __init__(self, input_dim, l1_dim , l2_dim, l3_dim, NEG, BS):
+    def __init__(self, input_dim, l1_dim , l2_dim, l3_dim, NEG, BS, Gamma):
         input_query = tf.placeholder(dtype=tf.float32, shape=[BS, input_d], name='input_query')
         input_document = tf.placeholder(dtype=tf.float32, shape=[BS, input_d], name='input_document') 
 
